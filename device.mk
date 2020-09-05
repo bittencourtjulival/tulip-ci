@@ -377,6 +377,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.tulip-libperfmgr \
