@@ -268,3 +268,7 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
 
 on property:sys.boot_completed=1
     stop boot_lc_main
+
+on property:sys.boot_completed=1
+    # Enable EAS
+    write /proc/sys/kernel/sched_energy_aware 1
