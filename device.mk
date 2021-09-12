@@ -30,7 +30,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/system-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(DEVICE_PATH)/configs/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
 
 PRODUCT_COPY_FILES += \
@@ -426,17 +425,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     TulipWifiOverlay
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libaacwrapper \
-    libnl
-
 # Shims
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/tulip/tulip-vendor.mk)
