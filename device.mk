@@ -228,9 +228,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
 
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl
-
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
