@@ -163,6 +163,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
+# ConsumerIR
+ifeq ($(BOARD_HAVE_IR),true)
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service.xiaomi_sdm660
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+endif
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
