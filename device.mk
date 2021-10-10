@@ -428,6 +428,9 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# TinyXML
+PRODUCT_PACKAGES += \
+    libtinyxml
 
 # Trust
 PRODUCT_PACKAGES += \
