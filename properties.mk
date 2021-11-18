@@ -232,6 +232,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.sta_detect=true \
     ro.vendor.sensors.mot_detect=true
 
+# System
+persist.sys.binary_xml=false
+
 # System Restart
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.shutdown_timeout=2
