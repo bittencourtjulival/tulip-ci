@@ -24,10 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Consumerir
 BOARD_HAVE_IR := true
 
-# Board
-PRODUCT_BOARD_PLATFORM := sdm660
-PRODUCT_USES_QCOM_HARDWARE := true
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
