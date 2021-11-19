@@ -16,6 +16,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+    
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
