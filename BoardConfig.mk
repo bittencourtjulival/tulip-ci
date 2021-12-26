@@ -37,7 +37,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/tulip
-TARGET_KERNEL_CONFIG := tulip_defconfig
+TARGET_KERNEL_CONFIG := mystic-tulip-oldcam_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM hardware
