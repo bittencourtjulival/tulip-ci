@@ -235,6 +235,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # System
 persist.sys.binary_xml=false
 
+#Spark-OS
+ro.spark.device.name=Redmi Note 6 Pro
+ro.spark.group.url=https://t.me/spark_tulip
+ro.spark.maintainer=Julival Bittencourt
+ro.spark.maintainer.username=bittencourtjulival
+
 # System Restart
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.shutdown_timeout=2
