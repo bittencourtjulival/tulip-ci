@@ -35,6 +35,7 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
+    hardware/xiaomi \
     hardware/google/interfaces \
     hardware/google/pixel
 
