@@ -1,6 +1,14 @@
 [
     {
-        "repository": "android_vendor_xiaomi_tulip",
+        "repository": "okta-10/mystic_kernel_sdm660-4.4",
+        "target_path": "kernel/xiaomi/tulip",
+        "branch": "Mystic-4.4",
+        "remote": "github" 
+    },
+    {
+        "repository": "Spark-Devices/android_vendor_xiaomi_tulip",
         "target_path": "vendor/xiaomi/tulip"
+        "branch": "spark",
+        "remote": "github"
     }
 ]
