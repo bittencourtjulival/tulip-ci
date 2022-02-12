@@ -158,6 +158,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=0 \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.disable_scaler=0
+    vendor.display.idle_time=32767
     vendor.gralloc.enable_fb_ubwc=1
     ro.support_hide_display_cutout=true
 
