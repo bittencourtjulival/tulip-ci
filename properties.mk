@@ -135,6 +135,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.renderengine.backend=skiaglthreaded \
     debug.sf.early_phase_offset_ns=500000 \
     debug.sf.early_app_phase_offset_ns=500000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000 \
@@ -157,9 +158,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
     vendor.display.disable_rotator_downscale=1 \
-    vendor.display.disable_scaler=0
-    vendor.display.idle_time=32767
-    vendor.gralloc.enable_fb_ubwc=1
+    vendor.display.disable_scaler=0 \
+    vendor.display.idle_time=32767 \
+    vendor.gralloc.enable_fb_ubwc=1 \
     ro.support_hide_display_cutout=true
 
 # FRP
