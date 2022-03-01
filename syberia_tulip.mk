@@ -10,15 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some decommon aosp stuff
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
 
 # Properties
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := false
-SPARK_BUILD_TYPE := OFFICIAL
 
 # Inherit from tulip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -26,7 +25,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := spark_tulip
+PRODUCT_NAME := syberia_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_tulip.mk
+    $(LOCAL_DIR)/syberia_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_tulip-user \
-    spark_tulip-userdebug \
-    spark_tulip-eng
+    syberia_tulip-user \
+    syberia_tulip-userdebug \
+    syberia_tulip-eng
