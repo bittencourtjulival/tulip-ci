@@ -145,6 +145,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=0 \
     debug.sf.recomputecrop=0 \
     debug.hwui.use_buffer_age=false \
+    debug.sf.disable_client_composition_cache=1 \
+    debug.sf.early.app.duration=16600000 \
+    debug.sf.early.sf.duration=16600000 \
+    debug.sf.earlyGl.app.duration=16600000 \
+    debug.sf.earlyGl.sf.duration=16600000 \
+    debug.sf.late.app.duration=16600000 \
+    debug.sf.late.sf.duration=10500000 \
     ro.opengles.version=196610 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
@@ -157,9 +164,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
     vendor.display.disable_rotator_downscale=1 \
-    vendor.display.disable_scaler=0
-    vendor.gralloc.enable_fb_ubwc=1
-    vendor.display.idle_time=32767
+    vendor.display.disable_scaler=0 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.display.idle_time=32767 \
     ro.support_hide_display_cutout=true
 
 # FRP
